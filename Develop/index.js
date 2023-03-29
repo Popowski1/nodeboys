@@ -32,6 +32,18 @@ const questions = [
             },
             {
                 type: 'input',
+                name: 'email',
+                message: 'email ?',
+                validate: emailInput => {
+                    if(emailInput) {
+                        return true;
+                    }else{console.log('enter email');
+                return false;
+            }
+                    }
+                },
+            {
+                type: 'input',
                 name: 'what',
                 message: 'What is this project?',
                 validate: whatInput => {
@@ -57,7 +69,7 @@ const questions = [
                 {
                     type: 'input',
                     name: 'how',
-                    message: 'How did you makethis project?',
+                    message: 'How did you make this project?',
                     validate: howInput => {
                         if(howInput) {
                             return true;

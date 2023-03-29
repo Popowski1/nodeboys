@@ -48,12 +48,15 @@ function generateMarkdown(data) {
   ${data.why}
   ${data.how}
   ## [Installation](#table-of-contents)
-  ${data.installation}
+  ${data.install}
+  
   ## [Usage](#table-of-contents)
   ${data.usage}
   ${renderLicenseSection(data.license)}
+
   ## [Tests](#table-of-contents)
   ${data.test}
+
   ## [Questions](#table-of-contents)
   Please contact me using the following links:
   [GitHub](https://github.com/${data.githubUsername})
